@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(247,118,116,255);
+    background-image: url('images/bg-intro-desktop.png');
+    font-size: 16px
+}
+
+main{
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    justify-content: space-between;
+
+}
+
+.wordsection{
+    width: 90%;
+    margin: 15% auto;
+    padding: 50px 0 0 140px;
+    color: white;
+}
+
+.formsection{
+    width: 110%;
+    padding: 70px 100px 0px;    
+}
+
+h1{
+   width: 100%;
+   font-family: 'Poppins', sans-serif;
+}
+
+.word-p1{
+    padding: 20px 0px;
+}
+
+.form-p1{
+    background-color: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 5px;
+    width: 85%;
+    margin: 15px 400px 15px 0px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 2px -2px rgba(0, 0, 0, 0.438);
+}
+
+.form{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 85%;
+    box-shadow: 0 8px 2px -2px rgba(0, 0, 0, 0.438);
+
+}
+
+input{
+    padding: 15px 10px;
+    width: 95%;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+
+/* #first,#last,#password ,#email{
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+} */
+
+
+#submit{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-p2{
+    text-align: center;
+}
+
+small{
+    color:hsl(246, 25%, 77%);
+    font-size: 60%;
+}
+
+small>b{
+color: hsl(0, 100%, 74%);
+}
+
+/* tried testing the error. it prove abortive */
+/* .form .errorMsg{
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin:auto;
+  width: 100%;
+  text-align: right;
+  padding: 0 10px;
+  opacity: 0;
+} */
+
+
+@media screen and (max-width:400px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        }
+    
+    .wordsection{
+        width: auto;
+        margin: 65px 0 0 0;
+        padding: 20px;
+        color: white;
+    }
+    
+    .formsection{
+        width: auto;
+        padding: 5px 20px;  
+    }
+    
+    h1{
+       width: auto;
+       font-family: 'Poppins', sans-serif;
+       text-align: center;
+    }
+    
+    .word-p1{
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+    
+    .form-p1{
+        border-radius: 10px;
+        width: auto;
+        margin: 25px auto;
+        padding: 25px;
+        
+    }
+    
+    .form{
+        border: 1px solid white;
+        padding: 12px;
+        border-radius: 10px;
+        width: auto;
+    }
+    
+    input{
+        width: 95%;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    
+    .form-p2{
+        margin: auto;
+        padding: 0 55px 15px;
+    }
+    
+    small{
+        font-size: 70%;
+    }
+    
+}
