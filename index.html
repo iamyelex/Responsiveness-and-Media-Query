@@ -27,10 +27,14 @@
             </p>
             <div class="form">
                 <form action="" >
-                    <input type="text" name="firstname" id="first" placeholder="First Name" required>
-                    <input type="text" name="lastname" id="last" placeholder="Last Name" required>
+                    <input type="text" name="firstname" id="first" placeholder="First Name" minlength="3" maxlength="25" required>
+                    <p class="errormsg"><em>First Name cannot be empty</em></p>
+                    <input type="text" name="lastname" id="last" placeholder="Last Name" minlength="3" maxlength="25" required>
+                    <p class="errormsg"><em>Last Name cannot be empty</em></p>
                     <input type="email" name="email" id="email" placeholder="Email Address" required>
-                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <p class="errormsg"><em>Looks like this is not an email</em></p>
+                    <input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="15" required>
+                    <p class="errormsg"><em>Password cannot be empty</em></p>
                     <input type="submit" class="doit" id="submit" value="CLAIM YOUR FREE TRIAL">
                 </form>
                 <p class="p form-p2">

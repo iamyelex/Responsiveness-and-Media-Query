@@ -100,17 +100,28 @@ color: hsl(0, 100%, 74%);
 }
 
 /* tried testing the error. it prove abortive */
-/* .form .errorMsg{
-  color: #cc0033;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 15px;
+.errormsg{
+  color: hsl(0, 100%, 74%);
+  font-size: 0.8em;
   margin:auto;
-  width: 100%;
   text-align: right;
-  padding: 0 10px;
-  opacity: 0;
-} */
+  padding:0px 10px 0 0;
+  visibility: visible;  
+}
+
+#first:focus ~ .errormsg, #first:valid ~ .errormsg{
+    visibility: hidden;
+}
+
+#last:focus ~ .errormsg, #last:valid ~ .errormsg{
+    visibility: hidden;
+}
+#email:focus ~ .errormsg, #email:valid ~ .errormsg{
+    visibility: hidden;
+}
+#password:focus ~ .errormsg, #password:valid ~ .errormsg{
+    visibility: hidden;
+}
 
 
 @media screen and (max-width:400px){
